@@ -6,7 +6,7 @@
 }
 
 // 主窗口样式
-.main {
+#main {
   width: 360px;
   height: 420px;
   background-color: @bg-color;
@@ -17,21 +17,20 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  .stage {
+  #stage {
     width: 304px;
     height: 304px;
     border: 2px solid black;
     position: relative;
-    .snake {
-      &>.head {
-        
-      }
+    #snake {
       &>div {
         width: 10px;
         height: 10px;
         background-color: #000;
         border: 1px solid @bg-color;
         position: absolute;
+        left: 100px;
+        top: 100px;
       }
     }
     #food {
@@ -51,7 +50,7 @@
       }
     }
   }
-  .score-panel {
+  #score-panel {
     width: 300px;
     display: flex;
     justify-content: space-between;

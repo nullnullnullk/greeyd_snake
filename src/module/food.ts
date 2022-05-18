@@ -1,6 +1,7 @@
 class Food {
-  // 定义一个属性表示所对应的div
-  element: HTMLElement = document.querySelector('div')!;
+  // 定义一个属性表示所对应的div；
+  element: HTMLElement
+  // element: HTMLElement = document.querySelector('div')!;
   consturctor() {
     // 获取页面中的food元素赋值给element
     // 末尾加上叹号，表示id为food的元素必定存在（非空）
